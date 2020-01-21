@@ -21,7 +21,9 @@
             {{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
           </mat-icon>
         </button>
-        {{node.name}}
+        
+        <span class="example-tree-node-name">{{node.name}}</span>
+
         <button mat-icon-button [matMenuTriggerFor]="menu">
           <mat-icon>more_vert</mat-icon>
         </button>
