@@ -9,3 +9,5 @@ Therefore cdk tree updates are not triggered when objects references stays the s
 Here's an example of removing / adding nodes to a nested data source. It replaces relevant nodes on the path from the root to the changed node. And it keeps the expansion state.
 
 https://angular-material-nested-tree-with-updates.stackblitz.io/
+
+In addition, the example features a border bottom on each node in the full width of the tree. The CSS for this can be tricky to come up with. However, it's just a matter of applying relative and absolute positioning.
