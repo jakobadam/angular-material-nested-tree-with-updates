@@ -1,0 +1,24 @@
+.example-tree-invisible {
+  display: none;
+}
+
+.example-tree ul,
+.example-tree li {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+
+/* silly UX, they want a border in the full width of the tree between tree nodes */
+.example-tree {
+  position: relative;
+}
+
+li::before {
+  height: 3rem;
+  position:absolute;
+  left: 0;
+  right: 0;
+  border-bottom: #EEE 1px solid;
+  content: ' ';
+}
